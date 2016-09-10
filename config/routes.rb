@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'definitions_controller/search'
+
   get 'welcome/index'
 
   get '/signup' => 'users#new'
