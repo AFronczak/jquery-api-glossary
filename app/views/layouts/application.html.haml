@@ -31,7 +31,7 @@
           %ul.nav.navbar-nav.navbar-right
             - if logged_in?
               %li
-                =current_user.name
+                =link_to current_user.name, login_path
               %li
                 = link_to "Log Out", logout_path
             -else
